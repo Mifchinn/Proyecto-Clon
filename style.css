@@ -10,11 +10,11 @@ body {
     color: #262626;
 }
 
-.container {
+.contenedor {
     display: flex;
 }
 
-.sidebar {
+.barra-lateral {
     width: 245px;
     height: 100vh;
     padding: 25px 12px;
@@ -32,13 +32,13 @@ body {
     width: 103px;
 }
 
-.nav-menu {
+.navegacion-menu {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.nav-item {
+.navegacion-item {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -49,71 +49,71 @@ body {
     color: #262626;
 }
 
-.nav-item:hover {
+.navegacion-item:hover {
     background-color: #f2f2f2;
 }
 
-.nav-item.active {
+.navegacion-item.activo {
     font-weight: 700;
 }
 
-.nav-item img {
+.navegacion-item img {
     width: 24px;
     height: 24px;
 }
 
-.main-content {
+.contenido-principal {
     margin-left: 245px;
     flex: 1;
 }
 
-.instagram-profile {
+.instagram-perfil {
     max-width: 935px;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-.profile-header {
+.encabezado-perfil {
     display: flex;
     gap: 80px;
     margin-bottom: 44px;
 }
 
-.profile-picture {
+.foto-perfil{
     width: 150px;
     height: 150px;
     flex-shrink: 0;
 }
 
-.profile-img {
+.perfil-img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.profile-info {
+.informacion-perfil {
     flex: 1;
 }
 
-.profile-top {
+.perfil-superior {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.profile-top h1 {
+.perfil-superior h1 {
     font-size: 20px;
     font-weight: 400;
 }
 
-.profile-actions {
+.acciones-perfil {
     display: flex;
     gap: 8px;
 }
 
-.profile-actions button {
+.acciones-perfil button {
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid #dbdbdb;
@@ -122,45 +122,45 @@ body {
     cursor: pointer;
 }
 
-.edit-profile {
+.editar-perfil {
     background-color: #efefef !important;
 }
 
-.profile-stats {
+.estadistica-perfil {
     display: flex;
     gap: 40px;
     margin-bottom: 20px;
 }
 
-.profile-stats span {
+.estadistica-perfil span {
     font-size: 16px;
 }
 
-.profile-bio {
+.biografia-perfil {
     font-size: 14px;
     line-height: 1.5;
 }
 
-.profile-bio h2 {
+.destacado-perfil h2 {
     font-size: 14px;
     font-weight: 600;
 }
 
-.profile-highlights {
+.destacado-perfil {
     display: flex;
     gap: 20px;
     margin-bottom: 44px;
     padding: 0 20px;
 }
 
-.highlight {
+.destacado {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
 
-.highlight img {
+.destacado img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -168,12 +168,12 @@ body {
     padding: 3px;
 }
 
-.highlight span {
+.destacado span {
     font-size: 12px;
     color: #262626;
 }
 
-.content-tabs {
+.pestañas-contenido {
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -181,7 +181,7 @@ body {
     margin-bottom: 20px;
 }
 
-.content-tabs button {
+.pestañas-contenido button {
     border: none;
     background: none;
     padding: 16px 0;
@@ -194,23 +194,23 @@ body {
     margin-top: -1px;
 }
 
-.content-tabs button.active {
+.pestañas-contenido button.active {
     color: #262626;
     border-top: 1px solid #262626;
 }
 
-.posts-grid {
+.publicaciones {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4px;
 }
 
-.post-item {
+.elemento-publicaciones {
     aspect-ratio: 1;
     overflow: hidden;
 }
 
-.post-item img {
+.elemento-publicaciones img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -226,12 +226,12 @@ body {
 }
 
 @media (max-width: 1264px) {
-    .sidebar {
+    .barra-lateral {
         width: 72px;
         padding: 25px 12px;
     }
     
-    .nav-item span {
+    .navegacion-item span {
         display: none;
     }
     
@@ -239,37 +239,37 @@ body {
         display: none;
     }
     
-    .main-content {
+    .contenido-principal {
         margin-left: 72px;
     }
 }
 
 @media (max-width: 735px) {
-    .profile-header {
+    .encabezado-perfil {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
 
-    .profile-info {
+    .informacion-perfil {
         text-align: center;
     }
 
-    .profile-top {
+    .perfil-superior {
         flex-direction: column;
     }
 
-    .profile-stats {
+    .estadistica-perfil {
         justify-content: center;
     }
 }
-.posts-grid{
+.publicaciones{
     min-height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.post-item{
+.elemento-publicaciones{
     height: 400px;
     width: 295px;
 }
@@ -299,12 +299,12 @@ footer samp{
 /*------------------------responsive------------------------------*/
 /* Responsive */
 @media (max-width: 1024px) {
-    .sidebar {
+    .barra-lateral {
         width: 72px;
         padding: 25px 12px;
     }
     
-    .nav-item span {
+    .navegacion-item span {
         display: none;
     }
     
@@ -312,45 +312,45 @@ footer samp{
         display: none;
     }
     
-    .main-content {
+    .contenido-principal {
         margin-left: 72px;
     }
 }
 
 @media (max-width: 768px) {
-    .profile-header {
+    .encabezado-perfil {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
 
-    .profile-info {
+    .informacion-perfil {
         text-align: center;
     }
 
-    .profile-top {
+    .perfil-superior {
         flex-direction: column;
     }
 
-    .profile-stats {
+    .estadistica-perfil {
         justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
-    .sidebar {
+    .barra-lateral {
         display: none;
     }
     
-    .main-content {
+    .contenido-principal {
         margin-left: 0;
     }
 
-    .profile-header {
+    .encabezado-perfil {
         gap: 10px;
     }
 
-    .posts-grid {
+    .publicaciones {
         grid-template-columns: repeat(2, 1fr);
     }
 }
