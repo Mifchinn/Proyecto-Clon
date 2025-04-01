@@ -21,6 +21,9 @@ body {
     border-right: 1px solid #dbdbdb;
     position: fixed;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
@@ -37,7 +40,6 @@ body {
     flex-direction: column;
     gap: 8px;
     width: 100%;
-    padding-left: 20px;
 }
 
 .navegacion-item {
@@ -87,6 +89,7 @@ body {
     width: 150px;
     height: 150px;
     flex-shrink: 0;
+    margin-top: 50px;
 }
 
 .perfil-img {
@@ -145,6 +148,15 @@ body {
     line-height: 1.5;
 }
 
+.biografia-perfil .configuracion {
+    border: none;
+    border-radius: 5px;
+    background-color: #EFEBEC;
+    display: inline-flex;
+    width: auto;
+    padding: 0.2em;
+}
+
 .destacado-perfil h2 {
     font-size: 14px;
     font-weight: 600;
@@ -162,11 +174,12 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    margin-right: 20px; /* Espacio entre los divs */
 }
 
 .destacado img {
-    width: 80px;
-    height: 80px;
+    width: 89px;
+    height: 89px;
     border-radius: 50%;
     border: 1px solid #dbdbdb;
     padding: 3px;
@@ -199,8 +212,9 @@ body {
 }
 
 .pestañas-contenido button.active {
-    color: #262626;
+    color: #000000;
     border-top: 1px solid #262626;
+    font-weight: bold;
 }
 
 .publicaciones {
@@ -225,9 +239,11 @@ body {
     background-color: #ff3040;
     color: white;
     font-size: 11px;
-    padding: 0 6px;
+    padding: 0.3em;
     border-radius: 50%;
-    margin-left: auto;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -15px;
 }
 
 
@@ -264,6 +280,9 @@ footer samp{
     color: #262626;
     font-size: small;
 }
+
+
+
 /*------------------------responsive------------------------------*/
 @media (max-width: 1024px) {
     .barra-lateral {
@@ -301,6 +320,7 @@ footer samp{
     body{
         zoom: 90%;
     }
+
     /*
     .publicaciones{
         display: flex;

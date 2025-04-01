@@ -4,51 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon1.png" />
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="#"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="contenedor">
         <nav class="barra-lateral">
-            <div class="logo">
-                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram">
-            </div>
-            <div class="navegacion-menu">
+            <div style="display: flex;flex-direction: column;">
+                 <div class="logo">
+                     <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram">
+                 </div>
+                 <div class="navegacion-menu">
+                     <a href="#" class="navegacion-item">
+                         <img src="img/icono-home.svg" style="height: 20px; width: 20px; stroke: black; stroke-width: 2;" alt="Home">
+                         <span>Inicio</span>
+                     </a>
+                     <a href="#" class="navegacion-item">
+                         <img src="img/icono-search.svg" style="height: 20px; width: 20px; stroke: black; stroke-width: 2;" alt="Search">
+                         <span>Buscar</span>
+                     </a>
+                     <a href="#" class="navegacion-item">
+                         <img src="img/icono-explore.svg" style="height: 20px; width: 20px; stroke: black; stroke-width: 2;" alt="Explore">
+                         <span>Explorar</span>
+                     </a>
+                     <a href="#" class="navegacion-item">
+                         <img src="img/icono-reels.svg" style="height: 20px; width: 20px; stroke: black; stroke-width: 2;" alt="Reels">
+                         <span>Reels</span>
+                     </a>
+                     <a href="#" class="navegacion-item">
+                         <img src="img/icono-message.svg" style="height: 20px; width: 20px; stroke: black; stroke-width: 2;" alt="Message">
+                         <span>Mensajes</span>
+                         <span class="notification-badge">&nbsp;9+&nbsp;</span>
+                     </a>
+                     <a href="#" class="navegacion-item">
+                         <img src="img/icono-heart.svg" style="height: 20px; width: 20px; stroke: black; stroke-width: 2;" alt="Heart">
+                         <span>Notificaciones</span>
+                         <span class="notification-badge" style="margin-left: 15px"></span>
+                     </a>
+                     <a href="#" class="navegacion-item">
+                         <img src="img/icono-post.svg" style="height: 20px; width: 20px; stroke: black; stroke-width: 2;" alt="Post">
+                         <span>Crear</span>
+                     </a>
+                     <a href="#" class="navegacion-item activo">
+                         <img src="img/perfil.jpg" alt="Profile" style="border-radius: 50%;">
+                         <span>Perfil</span>
+                     </a>
+                 </div>
+             </div>
+             <div class="navegacion-perfil">
                 <a href="#" class="navegacion-item">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjB2LTZoNHY2aDV2LThoM0wxMiAzIDIgMTJoM3Y4eiIvPjwvc3ZnPg==" alt="Home">
-                    <span>Inicio</span>
+                    <img src="img/threads.png" alt="Profile" style="border-radius: 50%;">
+                    <span>Threads</span>
                 </a>
                 <a href="#" class="navegacion-item">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuNSAxNGgtLjc5bC0uMjgtLjI3QTYuNDcxIDYuNDcxIDAgMCAwIDE2IDkuNSA2LjUgNi41IDAgMSAwIDkuNSAxNmMxLjYxIDAgMy4wOS0uNTkgNC4yMy0xLjU3bC4yNy4yOHYuNzlsNSA0Ljk5TDIwLjQ5IDE5bC00Ljk5LTV6bS02IDBDNy4wMSAxNCA1IDExLjk5IDUgOS41UzcuMDEgNSA5LjUgNSAxNCA3LjAxIDE0IDkuNSAxMS45OSAxNCA5LjUgMTR6Ii8+PC9zdmc+" alt="Search">
-                    <span>Buscar</span>
+                    <img src="img/mas.png" alt="Profile" style="border-radius: 50%;">
+                    <span>Más</span>
                 </a>
-                <a href="#" class="navegacion-item">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTMuNSAyLjVjNS42MjEgMCAxMC4xOCA0LjU1OSAxMC4xOCAxMC4xOCAwIDUuNjIxLTQuNTU5IDEwLjE4LTEwLjE4IDEwLjE4LTUuNjIxIDAtMTAuMTgtNC41NTktMTAuMTgtMTAuMTggMC01LjYyMSA0LjU1OS0xMC4xOCAxMC4xOC0xMC4xOHptMCAxLjVjLTQuNzg3IDAtOC42OCAzLjg5My04LjY4IDguNjhzMy44OTMgOC42OCA4LjY4IDguNjggOC42OC0zLjg5MyA4LjY4LTguNjgtMy44OTMtOC42OC04LjY4LTguNjh6bS0uNDU5IDYuMTkybDIuNTk3IDIuNTk3LTEuMDYxIDEuMDYxLTIuNTk3LTIuNTk3LTIuNTk3IDIuNTk3LTEuMDYxLTEuMDYxIDIuNTk3LTIuNTk3LTIuNTk3LTIuNTk3IDEuMDYxLTEuMDYxIDIuNTk3IDIuNTk3IDIuNTk3LTIuNTk3IDEuMDYxIDEuMDYxLTIuNTk3IDIuNTk3eiIvPjwvc3ZnPg==" alt="Explore">
-                    <span>Explorar</span>
-                </a>
-                <a href="#" class="navegacion-item">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6bTAtMTRjLTMuMzEgMC02IDIuNjktNiA2czIuNjkgNiA2IDYgNi0yLjY5IDYtNi0yLjY5LTYtNi02em0wIDEwYy0yLjIxIDAtNC0xLjc5LTQtNHMxLjc5LTQgNC00IDQgMS43OSA0IDQtMS43OSA0LTQgNHoiLz48L3N2Zz4=" alt="Reels">
-                    <span>Reels</span>
-                </a>
-                <a href="#" class="navegacion-item">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAgMkg0Yy0xLjEgMC0xLjk5LjktMS45OSAyTDIgMjJsNC00aDE0YzEuMSAwIDItLjkgMi0yVjRjMC0xLjEtLjktMi0yLTJ6bS0yIDEySDZ2LTJoMTJ2MnptMC0zSDZ2LTJoMTJ2MnptMC0zSDZ2LTJoMTJ2MnoiLz48L3N2Zz4=" alt="Messages">
-                    <span>Mensajes</span>
-                    <span class="notification-badge">2</span>
-                </a>
-                <a href="#" class="navegacion-item">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMjEuMzVsLTEuNDUtMS4zMkM1LjQgMTUuMzYgMiAxMi4yOCAyIDguNSAyIDUuNDIgNC40MiAzIDcuNSAzYzEuNzQgMCAzLjQxLjgxIDQuNSAyLjA5QzEzLjA5IDMuODEgMTQuNzYgMyAxNi41IDMgMTkuNTggMyAyMiA1LjQyIDIyIDguNWMwIDMuNzgtMy40IDYuODYtOC41NSAxMS41NEwxMiAyMS4zNXoiLz48L3N2Zz4=" alt="Notifications">
-                    <span>Notificaciones</span>
-                </a>
-                <a href="#" class="navegacion-item">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMTNoLTZ2NmgtMnYtNkg1di0yaDZWNWgydjZoNnYyeiIvPjwvc3ZnPg==" alt="Create">
-                    <span>Crear</span>
-                </a>
-                <a href="#" class="navegacion-item activo">
-                    <img src="https://via.placeholder.com/24" alt="Profile" style="border-radius: 50%;">
-                    <span>Perfil</span>
-                </a>
-            </div>
-        </nav>
+             </div>
+         </nav>
         
         <main class="contenido-principal">
             <div class="instagram-perfil">
@@ -62,21 +77,36 @@
                             <div class="acciones-perfil">
                                 <button class="editar-perfil">Editar perfil</button>
                                 <button class="archivo">Ver archivo</button>
-                                <button class="configuracion">⚙️</button>
+                                <button class="configuracion" style="border: none;">
+                                    <img src="img/ajustes.png" alt="icono" />
+                                  </button>
+                                  
                             </div>
                         </div>
                         <div class="estadistica-perfil">
-                            <span><strong>28</strong> publicaciones</span>
+                            <span><strong>9</strong> publicaciones</span>
                             <span><strong>779</strong> seguidores</span>
                             <span><strong>746</strong> seguidos</span>
                         </div>
                         <div class="biografia-perfil">
-                            <h2>Jhordan Rodnman</h2>
-                            <p>Blog personal</p>
+                            <h4>Jhordan Rodnman</h4>
+                            <div class="configuracion" style="border: none;">
+                                <img src="img/th.png" alt="icono" /><span style="font-size: 12px; border-radius: 50%;">Jhordan.rodnman</span>
+                              </div>
+                            <p style="color: rgb(126, 129, 129);">Blog personal</p>
                             <p>Ing. Sistemas</p>
-                            <p>Mentor @britishcouncil</p>
+                            <p>Mentor <span style="color: rgb(18, 97, 147);">@britishcouncil</span></p>
                             <p>Coordinador Rio Software</p>
-                            <p>Coordinador @robotica_choco...</p>
+                            <p>Coordinador<span style="color: rgb(18, 97, 147);">@robotica_choco...</span>
+                                <span style="color: rgb(130, 130, 130);">más</span></p>
+
+                                <a href="#" style="text-decoration: none; color: rgb(10, 80, 128);">
+                                    <p> 
+                                        <img src="img/facebook.png" alt="Icono facebook" class="facebook-logo"> 
+                                        <b>Perfil de Facebook + 1 enlace</b>
+                                    </p>
+                                </a>
+                                
                         </div>
                     </div>
                 </div>
@@ -121,14 +151,23 @@
 
                 <div class="contenido-perfil">
                     <div class="pestañas-contenido">
-                        <button class="activo">📑 PUBLICACIONES</button>
-                        <button>📺 REELS</button>
-                        <button>🔖 GUARDADO</button>
-                        <button>🏷️ ETIQUETAS</button>
+                        <button class="active">
+                            <img src="img/publicaciones.png" alt="Publicaciones"  style="font-weight: bold;"> PUBLICACIONES
+                        </button>
+                        <button>
+                            <img src="img/reels.png" alt="Reels" class="icono"> REELS
+                        </button>
+                        <button>
+                            <img src="img/guardado.png" alt="Guardado" class="icono"> GUARDADO
+                        </button>
+                        <button>
+                            <img src="img/etiquetas.png" alt="Etiquetas" class="icono"> ETIQUETAS
+                        </button>
                     </div>
+                    
                     <div class="publicaciones">
                         <div class="elemento-publicaciones">
-                            <img src="img/i1.png" alt="Publicacion 1" class="publicaciones">
+                            <img src="img/i1.png" alt="Publicacion 1" >
                         </div>
                         <div class="elemento-publicaciones">
                             <img src="img/i2.png" alt="Publicacion 2">
