@@ -305,6 +305,14 @@ footer samp{
     .logo {
         display: none;
     }
+
+    .navegacion-perfil{
+        display: none;
+    }
+
+    .nav-notification{
+        display: none;
+    }
     
     .contenido-principal {
         margin-left: 0;
@@ -318,7 +326,7 @@ footer samp{
         justify-content: space-between;
     }
     body{
-        zoom: 90%;
+        /*zoom: 90%;*/
     }
 
     /*
